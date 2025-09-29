@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <>
       <section className="py-24">
-        <div className="container mx-auto flex flex-col items-center gap-16 lg:px-16">
+        <div className="container mx-auto flex flex-col items-center gap-8 lg:px-16">
           <div className="text-center">
             <Badge variant="secondary" className="mb-6">
               Latest Updates

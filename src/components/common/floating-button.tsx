@@ -10,7 +10,6 @@ import Step2 from "@/components/steps/step2";
 import Step3 from "@/components/steps/step3";
 import Step4 from "@/components/steps/step4";
 import { useWizardStore } from "@/store/useWizardStore";
-import Link from "next/link";
 
 export default function FloatingButton() {
   const [open, setOpen] = useState(false);
@@ -37,20 +36,6 @@ export default function FloatingButton() {
           {step === 2 && <Step2 />}
           {step === 3 && <Step3 />}
           {step === 4 && <Step4 setOpen={setOpen} />}
-          {step === 5 && (
-            <div className="text-center space-y-4">
-              <h2 className="text-2xl font-semibold text-green-700">
-                Success!
-              </h2>
-              <p>Your blog post has been saved successfully.</p>
-              <Link
-                href="/"
-                className="inline-block px-4 py-2 bg-sky-600 text-white rounded"
-              >
-                Go to Homepage
-              </Link>
-            </div>
-          )}
         </Wizard>
       </DialogCustom>
     </>
